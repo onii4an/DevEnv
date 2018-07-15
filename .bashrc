@@ -131,8 +131,12 @@ export NVM_DIR="$HOME/.nvm"
 
 
 # MY CONFIGS
+[ -f /usr/share/bash-completion/completions/git ] && . /usr/share/bash-completion/completions/git # git complete for aliases
+
 export EDITOR=gvim # default editor = gvim
 alias g='git' # git shortcut
+__git_complete g _git
+complete -F _git g
 
 tmux # start tmux
 

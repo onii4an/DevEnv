@@ -1,5 +1,5 @@
 apt update
-apt install ctags wmctrl vim-gnome git-gui
+apt install ctags wmctrl vim-gnome git-gui bash-completion
 
 cp ~/.bashrc ~/.bashrc.bak
 cp ~/.bash_profile ~/.bash_profile.bak
