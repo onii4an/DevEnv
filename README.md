@@ -1,7 +1,7 @@
 # Setup
 
      git clone https://github.com/onii4an/DevEnv.git
-     ./DevEnv/setup.sh
+     ./setup.sh
 
 # Back
 
