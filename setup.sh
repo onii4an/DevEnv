@@ -11,6 +11,7 @@ cp .bash_profile ~/.bash_profile
 cp -R .tmux ~/.tmux
 cp -R .vim ~/
 
+cd
 ln -s  ~/.vim/.vimrc ~/.vimrc
 ln -s -f .tmux/.tmux.conf
 ln -s -f .tmux/.tmux.conf.local
@@ -24,3 +25,6 @@ cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://
 cd
 mkdir -p .bash/themes/agnoster-bash
 git clone https://github.com/speedenator/agnoster-bash.git .bash/themes/agnoster-bash
+
+cd DevEnv/fontpatcher
+sudo ./setup.py install
