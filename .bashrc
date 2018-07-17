@@ -133,12 +133,19 @@ export NVM_DIR="$HOME/.nvm"
 # MY CONFIGS
 [ -f /usr/share/bash-completion/completions/git ] && . /usr/share/bash-completion/completions/git # git complete for aliases
 
-export EDITOR=gvim # default editor = gvim
 alias g='git' # git shortcut
 __git_complete g _git
 complete -F _git g
 
-tmux # start tmux
+# Docker aliases
+alias dst='RAILS_ENVIRONMENT=test docker-compose up'
+alias ds='docker-compose up'
+alias dweb='docker exec -it cb_webapp_1'
+alias ddb='docker exec -it cb_database_1'
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+[[ $- != i ]] && return
+[[ -z "$TMUX" ]] && exec tmux
 
 welcome() {
   # figlet "Welcome, " $USER;
