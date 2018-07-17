@@ -25,7 +25,7 @@ shopt -s histappend
 HISTSIZE=10000
 HISTFILESIZE=120000
 export TERM=xterm-256color
-export TMUX=xterm-256color
+# export TMUX=xterm-256color
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -150,7 +150,7 @@ alias dweb='docker exec -it cb_webapp_1'
 alias ddb='docker exec -it cb_database_1'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-[[ $- != i ]] && return
+[[ $- != *i* ]] && return
 [[ -z "$TMUX" ]] && exec tmux
 
 welcome() {

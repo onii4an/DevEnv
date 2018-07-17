@@ -13,6 +13,7 @@ cp -R .vim ~/
 
 ln -s  ~/.vim/.vimrc ~/.vimrc
 ln -s -f .tmux/.tmux.conf
+ln -s -f .tmux/.tmux.conf.local
 
 git config --global alias.br branch
 git config --global alias.co checkout
