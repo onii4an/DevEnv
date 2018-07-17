@@ -18,3 +18,7 @@ git config --global alias.co checkout
 
 mkdir ~/.fonts
 cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20Nerd%20Font%20Complete%20Mono.otf?raw=true
+
+cd
+mkdir -p .bash/themes/agnoster-bash
+git clone https://github.com/speedenator/agnoster-bash.git .bash/themes/agnoster-bas
