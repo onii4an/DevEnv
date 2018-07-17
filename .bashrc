@@ -8,6 +8,12 @@ case $- in
       *) return;;
 esac
 
+export THEME=$HOME/.bash/themes/agnoster-bash/agnoster.bash
+if [[ -f $THEME ]]; then
+    export DEFAULT_USER=`whoami`
+    source $THEME
+fi
+
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
