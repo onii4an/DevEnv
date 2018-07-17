@@ -12,6 +12,7 @@ cp -R .tmux ~/.tmux
 cp -R .vim ~/
 
 ln -s  ~/.vim/.vimrc ~/.vimrc
+ln -s -f .tmux/.tmux.conf
 
 git config --global alias.br branch
 git config --global alias.co checkout
@@ -21,4 +22,4 @@ cd ~/.fonts && curl -fLo DroidSansMonoForPowerlinePlusNerdFileTypes.otf https://
 
 cd
 mkdir -p .bash/themes/agnoster-bash
-git clone https://github.com/speedenator/agnoster-bash.git .bash/themes/agnoster-bas
+git clone https://github.com/speedenator/agnoster-bash.git .bash/themes/agnoster-bash
