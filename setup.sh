@@ -5,11 +5,13 @@ cp ~/.bashrc ~/.bashrc.bak
 cp ~/.bash_profile ~/.bash_profile.bak
 cp -R ~/.tmux ~/.tmux.bak
 cp -R ~/.vim ~/.vim.bak
+cp ~/.rubocop.yml ~/.rubocop.yml.bak
 
 cp .bashrc ~/.bashrc
 cp .bash_profile ~/.bash_profile
 cp -R .tmux ~/.tmux
 cp -R .vim ~/
+cp .rubocop.yml ~/.rubocop.yml
 
 cd
 ln -s  ~/.vim/.vimrc ~/.vimrc
